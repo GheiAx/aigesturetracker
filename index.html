@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Gesture Music Player</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.20.0/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8.5/dist/teachablemachine-image.min.js"></script>
+
+  <style>
+    body {
+      background: #111;
+      color: white;
+      text-align: center;
+      font-family: Arial;
+    }
+
+    canvas {
+      margin-top: 20px;
+      border-radius: 15px;
+    }
+
+    #status {
+      margin-top: 20px;
+      font-size: 22px;
+      color: #00ff99;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Gesture Music Player 🎵</h1>
+
+  <button onclick="init()">Avvia</button>
+
+  <div id="webcam-container"></div>
+
+  <div id="status">In attesa...</div>
+
+  <audio id="song" src="song.mp3"></audio>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

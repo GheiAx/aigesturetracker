@@ -1,0 +1,20 @@
+body {
+  background: #111;
+  color: white;
+  text-align: center;
+  font-family: Arial;
+}
+
+canvas {
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+#status {
+  margin-top: 20px;
+  color: #00ff99;
+}
